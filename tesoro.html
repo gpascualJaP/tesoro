@@ -62,10 +62,8 @@
     <button class="button" id="search-button">Buscar</button>
     <p class="error-text hidden-area">El botón no funciona correctamente.</p>
 
-    <!-- Error visual: Texto mal escrito -->
     <p id="error-text">¡Busca el tesoro junto a tu equipo y conviértanse en auténticos pirataz testers!</p>
 
-    <!-- Enlace roto -->
     <a href="incorrect-link.html" class="button" id="broken-link">Ir a la siguiente pista</a>
 
     <div class="hidden-area" id="hidden-treasure"></div>
@@ -73,10 +71,8 @@
 
   <script>
     document.getElementById("search-button").addEventListener("click", function() {
-      // El botón no hace nada (error funcional)
     });
 
-    // Defecto oculto debajo del botón "Ir a la siguiente pista"
     document.body.addEventListener("click", function(event) {
       if (event.target.id === "hidden-treasure") {
         alert("¡Felicitaciones, encontraste el defecto oculto!");
